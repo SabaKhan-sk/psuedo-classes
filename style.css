@@ -1,0 +1,110 @@
+body{
+    background-color: grey;
+    color: darkgreen;
+    font: normal 16px Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:link {
+    color: forestgreen;
+}
+a:visited{
+    color: hotpink;
+}
+a:hover{
+    background: black;
+}
+a:active{
+    color: lightblue;
+}
+p:active{
+    background: none;
+}
+.container{
+    width: 500px;
+    margin-top: 20px;
+    padding-left: 40px;
+}
+.link{
+    background-color: palevioletred;
+    padding: 20px;
+    border: 10px teal dotted;
+    
+}
+.link h1{
+      color: firebrick;
+      font-family: Tahoma; 
+      text-transform: uppercase;
+      word-spacing: 0.5em;
+}
+a:any-link{
+    border: 1px solid blue;
+    color: orange;
+}
+.container2{
+    width: 500px;
+    margin-top: 20px;
+    padding-left: 40px;
+}
+.link2{
+    background-color: firebrick;
+    padding: 20px;
+}
+.link2 h2{
+    color: violet;
+    font-family: Tahoma; 
+    text-transform: uppercase;
+    word-spacing: 0.5em;
+}
+.link2 p{
+    color: white;
+}
+form{
+    color: greenyellow;
+}
+form:active button{
+    color: orangered;
+}
+form button{
+    background: teal;
+}
+input:checked + label{
+    color: red;
+}
+input[type="radio"]:checked{
+    box-shadow: 0 0 0 3px orange;
+}
+input[type="checkbox"]:checked{
+    box-shadow: 0 0 0 3px hotpink;
+}
+option:checked{
+    box-shadow: 0 0 0 3px lime;
+    color: red;
+}
+#expand-toggle{
+    display: none;
+}
+.expandable{
+    visibility: collapse;
+    background: #ddd;
+}
+#expand-btn{
+    display: inline-block;
+    margin-top: 12px;
+    padding: 5px 11px;
+    background-color: #777;
+    border: 1px solid;
+    border-radius: 3px;
+}
+#expand-toggle:checked ~ * .expandable{
+    visibility: visible;
+}
+#expand-toggle:checked ~ #expand-btn{
+    background-color: #ccc;
+}
+
+
